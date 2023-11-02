@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922761049441",
+    "project_id": "cash-uc",
+    "storage_bucket": "cash-uc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922761049441:android:dc240d57265493099f4120",
+        "android_client_info": {
+          "package_name": "uz.abboskhan.cashuc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXafzft9uK-mI2TP-K5NSC0FBcqIKV1N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
