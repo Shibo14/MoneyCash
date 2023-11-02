@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_line_svgrepo_com"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/pay"
+        android:icon="@drawable/dollar"
+        android:title="Pay" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/receipt"
+        android:title="History" />
+    <item
+        android:id="@+id/person"
+        android:icon="@drawable/person_svgrepo_com"
+        android:title="Person" />
+
+
+</menu>
