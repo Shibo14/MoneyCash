@@ -3,7 +3,12 @@
     <style name="Base.Theme.CashUc" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">
+            @color/purple_700
+        </item>
+        
     </style>
 
     <style name="Theme.CashUc" parent="Base.Theme.CashUc" />
+
 </resources>

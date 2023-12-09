@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_700"
     tools:context=".SignUpActivity">
 
     <ScrollView
@@ -24,6 +25,7 @@
                 android:id="@+id/signUpAnim"
                 android:layout_width="350dp"
                 android:layout_height="280dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -39,7 +41,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="8dp"
                 android:text="Sign up"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -59,9 +61,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvSinUp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                 >
                 <EditText
+                    android:textColor="@color/white"
                     android:id="@+id/etSinUpName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -70,6 +73,9 @@
                     android:textSize="@dimen/et_text_size"
                     />
             </com.google.android.material.textfield.TextInputLayout>
+
+
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilEmail"
                 android:layout_width="match_parent"
@@ -78,6 +84,7 @@
                 android:layout_marginEnd="@dimen/start_end_margin"
                 android:layout_marginTop="10dp"
                 app:boxStrokeWidth="2dp"
+
                 app:boxCornerRadiusBottomEnd="@dimen/til_radius"
                 app:boxCornerRadiusBottomStart="@dimen/til_radius"
                 app:boxCornerRadiusTopEnd="@dimen/til_radius"
@@ -85,9 +92,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >
                 <EditText
+                    android:textColor="@color/white"
+
                     android:id="@+id/etSinUpEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -98,6 +106,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+
                 android:id="@+id/tilPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,12 +119,14 @@
                 app:boxCornerRadiusBottomStart="@dimen/til_radius"
                 app:boxCornerRadiusTopEnd="@dimen/til_radius"
                 app:boxCornerRadiusTopStart="@dimen/til_radius"
+                app:passwordToggleTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilEmail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >
                 <EditText
+                    android:textColor="@color/white"
+
                     android:id="@+id/etSinUpPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -124,22 +135,51 @@
                     android:textSize="@dimen/et_text_size"
                     />
             </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/referCodeEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/start_end_margin"
+                android:layout_marginEnd="@dimen/start_end_margin"
+                android:layout_marginTop="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+                app:boxCornerRadiusBottomStart="@dimen/til_radius"
+                app:boxCornerRadiusTopEnd="@dimen/til_radius"
+                app:boxCornerRadiusTopStart="@dimen/til_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilPassword"
+                >
+                <EditText
+                    android:textColor="@color/white"
+
+                    android:id="@+id/edtReferCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="refer code"
+                    android:textSize="@dimen/et_text_size"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <Button
                 android:id="@+id/btnSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
 
+                android:layout_marginEnd="20dp"
                 android:text="Sign Up"
-                android:layout_marginTop="20dp"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tilPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/referCodeEdt" />
 
             <LinearLayout
                 android:layout_width="match_parent"

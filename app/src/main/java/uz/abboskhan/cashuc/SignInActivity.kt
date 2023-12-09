@@ -8,6 +8,8 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import uz.abboskhan.cashuc.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
@@ -18,6 +20,15 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = Firebase.auth
+
+        binding.btnSignIn.setOnClickListener {
+            userLogin()
+        }
+
+        binding.tvRegister.setOnClickListener {
+            startActivity(Intent(this,SignUpActivity::class.java))
+        }
 
     }
     private fun userLogin() {

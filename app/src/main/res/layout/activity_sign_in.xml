@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_700"
     tools:context=".SignInActivity">
 
     <ScrollView
@@ -25,6 +26,7 @@
                 android:id="@+id/signInAnim"
                 android:layout_width="350dp"
                 android:layout_height="280dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -37,8 +39,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
                 android:text="Login"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +49,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilEmail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/start_end_margin"
@@ -62,6 +65,8 @@
                 app:layout_constraintTop_toBottomOf="@id/tvLogin">
 
                 <EditText
+                    android:textColor="@color/white"
+
                     android:id="@+id/etSinInEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -72,7 +77,6 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/start_end_margin"
@@ -86,9 +90,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilEmail"
+                app:passwordToggleTint="@color/white"
                 app:passwordToggleEnabled="true">
 
                 <EditText
+                    android:textColor="@color/white"
+
                     android:id="@+id/etSinInPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -137,6 +144,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/btnSignIn">
 
                 <TextView
+                    android:textColor="@color/blue_1"
                     android:id="@+id/tvNewHere"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -148,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Register"
-                    android:textColor="@color/blue_5"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
